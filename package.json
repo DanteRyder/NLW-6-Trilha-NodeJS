@@ -1,0 +1,19 @@
+{
+  "name": "nlw-6-trilha-nodejs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/DanteRyder/NLW-6-Trilha-NodeJS.git",
+  "author": "Isaías França <isaias_leite_@outlook.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev src/server.ts"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.12",
+    "ts-node-dev": "^1.1.6",
+    "typescript": "^4.3.4"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
