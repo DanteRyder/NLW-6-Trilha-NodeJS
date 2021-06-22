@@ -5,9 +5,9 @@
 
 - Cadastro de usuário
   
-  [X] Não é permitido cadastrar mais de um usuário com o mesmo e-mail
+  [x] Não é permitido cadastrar mais de um usuário com o mesmo e-mail
 
-  [X] Não é permitido cadastrar usuário sem e-mail
+  [x] Não é permitido cadastrar usuário sem e-mail
 
 
 
