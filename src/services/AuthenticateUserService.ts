@@ -1,4 +1,5 @@
 import { getCustomRepository } from "typeorm"
+import { AppError } from "../errors/AppError"; 
 
 import { compare } from "bcryptjs";
 import { sign } from "jsonwebtoken";
@@ -20,7 +21,7 @@ class AuthenticateUserService {
         });
 
         if (!user) {
-            throw new Error("Email/Password incorrect");
+            throw new AppError("Email/Password incorrect");
         }
 
         // Verificar se senha está correta
@@ -29,7 +30,7 @@ class AuthenticateUserService {
         const passwordMatch = await compare(password, user.password);
 
         if (!passwordMatch) {
-            throw new Error("Email/Password incorrect");
+            throw new AppError("Email/Password incorrect");
         }
 
         // Gerar token
